@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lumina | by Joud</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <h1>Lumina</h1>
+            <span>by Joud</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart" id="cartToggle" aria-label="Open cart">
+            🛍️ <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- CART PANEL -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Your purchases">
+
+        <div class="cart-panel-head">
+            <h3>Your purchases</h3>
+            <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty" id="cartEmpty">Nothing here yet — tap the <span>+</span> on a piece you love.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">0 EGP</span>
+            </div>
+            <button class="main-button cart-checkout" id="cartCheckout">Send order on Instagram</button>
+            <button class="main-button cart-checkout cart-checkout-alt" id="cartCheckoutWhatsapp">Send order on WhatsApp</button>
+            <p class="cart-hint" id="cartHint">Instagram copies your order — paste it in the DM that opens.</p>
+        </div>
+
+    </aside>
+
+    <div class="toast" id="toast"></div>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+
+            <p class="small-title">Handmade with love</p>
+
+            <h2>
+                Little things<br>
+                <span>made beautiful.</span>
+            </h2>
+
+            <p class="description">
+                Discover unique handmade pieces created
+                with love and a little touch of magic.
+            </p>
+
+            <a href="#shop" class="main-button">
+                Explore Collection
+            </a>
+
+        </div>
+
+
+        <div class="hero-decoration">
+
+            <div class="circle"></div>
+
+            <div class="flower">✿</div>
+
+            <div class="heart">♡</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SHOP -->
+    <section id="shop" class="shop">
+
+        <div class="section-title">
+
+            <p>Our collection</p>
+
+            <h2>Made for you</h2>
+
+        </div>
+
+
+        <div class="products">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="IMG_7744.jpg" alt="Rupunzel Flower">
+
+                    <span class="favorite">♡</span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Handmade</p>
+
+                    <h3>Rupunzel Flower</h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">500 EGP</span>
+
+                        <button class="add-to-cart" data-name="Rupunzel Flower" data-price="500" data-img="IMG_7744.jpg" aria-label="Add Rupunzel Flower to cart">+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="IMG_7579.jpg" alt="Lily Flower">
+
+                    <span class="favorite">♡</span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Handmade</p>
+
+                    <h3>Lily Flower</h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">50 EGP</span>
+
+                        <button class="add-to-cart" data-name="Lily Flower" data-price="50" data-img="IMG_7579.jpg" aria-label="Add Lily Flower to cart">+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="lily.jpg" alt="Lily Flower">
+
+                    <span class="favorite">♡</span>
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category">Handmade</p>
+
+                    <h3>Lily Flower</h3>
+
+                    <div class="product-bottom">
+
+                        <span class="price">50 EGP</span>
+
+                        <button class="add-to-cart" data-name="Lily Flower" data-price="50" data-img="lily.jpg" aria-label="Add Lily Flower to cart">+</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+
+        <div>
+
+            <p class="small-title">The story of Lumina</p>
+
+            <h2>
+                Created slowly.<br>
+                Loved deeply.
+            </h2>
+
+            <p>
+                Lumina is a handmade brand created by Joud,
+                turning little ideas into beautiful pieces.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+
+        <p class="small-title">Let's connect</p>
+
+        <h2>Stay in touch with Lumina</h2>
+
+        <p>Instagram: <a href="https://www.instagram.com/lumina__blooms?stkn=bGZ4cmNnb3gxc2Q4&utm_source=qr" target="_blank" rel="noopener noreferrer">@lumina__blooms</a></p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>Lumina</h2>
+
+        <p>by Joud ♡</p>
+
+        <small>© 2026 Lumina. All rights reserved.</small>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
